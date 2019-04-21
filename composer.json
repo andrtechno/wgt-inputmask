@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "robinherbots/inputmask": ">=4"
+        "robinherbots/inputmask": "4.0.6"
     },
     "autoload": {
         "psr-4": {
