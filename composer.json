@@ -3,7 +3,7 @@
     "description": "Widget Inputmask",
     "keywords": ["pixelion-cms", "extension", "widget", "inputmask"],
     "homepage": "https://github.com/andrtechno/wgt-inputmask",
-    "type": "extension",
+    "type": "yii2-extension",
     "license": "MIT",
     "authors": [
         {
