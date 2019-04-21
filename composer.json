@@ -1,0 +1,23 @@
+{
+    "name": "panix/wgt-inputmask",
+    "description": "Widget JsTree",
+    "keywords": ["pixelion-cms", "extension", "widget", "inputmask"],
+    "homepage": "https://github.com/andrtechno/wgt-inputmask",
+    "type": "extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PIXELION CMS",
+            "email": "dev@pixelion.com.ua",
+            "homepage": "https://pixelion.com.ua"
+        }
+    ],
+    "require": {
+        "robinherbots/inputmask": ">=4"
+    },
+    "autoload": {
+        "psr-4": {
+            "panix\\ext\\inputmask\\": ""
+        }
+    }
+}
