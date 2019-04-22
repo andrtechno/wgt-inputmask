@@ -47,6 +47,9 @@ Usage without a model (you must specify the "name" attribute) :
 
 ```php
 echo $form->field($model, 'attribute_name')->widget(InputMask::class, [
-        // configure additional widget properties here
+    'extensions' => ['date'],
+    'pluginOptions' => [
+        'mask' => 'dd/mm/yyyy'
+    ]
 ]);
 ```
