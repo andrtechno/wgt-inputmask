@@ -1,19 +1,22 @@
 <?php
 
-namespace panix\wgt\inputmask;
+namespace panix\ext\inputmask;
 
-use panix\engine\web\AssetBundle;
+use yii\web\AssetBundle;
+use yii\web\View;
 
-class InputMaskAsset extends AssetBundle {
+class InputMaskAsset extends AssetBundle
+{
 
-    public $sourcePath = __DIR__ . '/assets';
+    public $jsOptions = [
+        'position' => View::POS_END
+    ];
+
+    public $sourcePath = '@vendor/robinherbots/jquery.inputmask/dist/min/inputmask';
+
     public $js = [
-        'dist/inputmask/inputmask.js',
-        'dist/inputmask/inputmask.extensions.js',
-        'dist/inputmask/inputmask.numeric.extensions.js',
-        'dist/inputmask/inputmask.date.extensions.js',
-        'dist/inputmask/jquery.inputmask.js',
-
+        'inputmask.min.js',
+        'jquery.inputmask.min.js',
     ];
 
     public $depends = [

@@ -36,18 +36,17 @@ Usage
 Once the extension is installed, simply use it in your code by :
 
 ```php
-<?= \panix\ext\inputmask\InputMask::widget([
+echo InputMask::widget([
     'attribute' => 'attribute_name',
     'model' => $model,
     //...
-]); ?>
+]);
 ```
 
 Usage without a model (you must specify the "name" attribute) :
 
 ```php
-<?= \panix\ext\inputmask\InputMask::widget([
-    'name' => 'js_tree',
-    //...
-]); ?>
+echo $form->field($model, 'attribute_name')->widget(InputMask::class, [
+        // configure additional widget properties here
+]);
 ```
