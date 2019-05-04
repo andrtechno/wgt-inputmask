@@ -25,7 +25,7 @@ class InputMask extends InputWidget
         $bundle = InputMaskAsset::register($view);
 
         if (!isset($this->pluginOptions['mask']))
-            $this->pluginOptions['mask'] = '+3 (999) 999-99-99';
+            $this->pluginOptions['mask'] = '+38 (999) 999-99-99';
 
 
 
